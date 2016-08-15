@@ -1,0 +1,14 @@
+
+<div ng-repeat="i in vm.items">
+  {{i.name}} / ${{i.price}}
+</div>
+
+<br/>
+<form ng-submit="vm.submit()">
+  <input type="text" placeholder="name" ng-model="vm.item.name" />
+  <input type="number" placeholder="price" ng-model="vm.item.price" />
+  <button type="submit">submit</button>
+</form>
+
+
+
